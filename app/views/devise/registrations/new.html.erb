@@ -1,4 +1,17 @@
-<h2>Sign up</h2>
+<section class="hero is-primary is-fillheight">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-center">
+        <div class="columns is-6-table is-6-desktop is-6-widescreen">
+          <div class="box">
+            <div class="field has-text-centered"><strong>Sign Up</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
