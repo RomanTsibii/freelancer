@@ -1,0 +1,7 @@
+        Task 6
+rails g model Category name --no-test-framework
+rails g model Gig title video active:boolean has_single_pricing:boolean user:references category:references --no-test-framework
+rails g model Prising title description:text delivery_time:integer price:integer pricing_type:integer gig:references --no-test-framework
+rails action_text:install
+--
+rails db:migrate
