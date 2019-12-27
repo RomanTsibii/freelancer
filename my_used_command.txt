@@ -5,3 +5,5 @@ rails g model Prising title description:text delivery_time:integer price:integer
 rails action_text:install
 --
 rails db:migrate
+-----
+ rails g controller Gigs new edit create update show --no-test-framework
