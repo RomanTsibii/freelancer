@@ -5,9 +5,10 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'users#dashboard'
   get '/users/:id', to: 'users#show'
 
+  resources :gigs
+
   post '/users/edit', to: 'users#update'
 
-  resource :gigs
 
   devise_for :users,
                        path: '',

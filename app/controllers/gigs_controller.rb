@@ -21,7 +21,6 @@ class GigsController < ApplicationController
   end
 
   def edit
-
   end
 
 

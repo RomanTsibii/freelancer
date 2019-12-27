@@ -18,6 +18,7 @@ gem 'bulma-extensions-rails', '~> 1.0.30'
 gem 'devise'
 gem 'omniauth', '= 1.9.0'
 gem 'omniauth-facebook', '= 5.0.0'
+gem 'faker', '=1.9.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
