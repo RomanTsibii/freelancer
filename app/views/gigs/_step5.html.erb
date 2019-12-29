@@ -5,14 +5,14 @@
     <p>Let's publish your Gig and get some buyers rolling in.</p>
   </div>
 </div>
+
 <div class="field is-grouped is-grouped-centered m-t-25">
-  <p class="control">
+  <p class="control <%= 'is-hidden' if @step <= 1 %>">
     <%= link_to 'Back', edit_gig_path(@gig, step: @step -1), class: "button is-light" %>
   </p>
   <p class="control">
     <% if @step !=5 %>
       <%= f.submit 'Save & Continue', class: "button is-primary" %>
-      <% @step =+1 %>
     <% else %>
       <%= link_to 'Publish', gig_path(@gig.id, gig: {active: true}, step: @step),
                     method: :put,
