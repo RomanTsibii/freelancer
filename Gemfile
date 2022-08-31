@@ -16,7 +16,7 @@ gem 'bootsnap', '>= 1.4.5', require: false
 gem 'bulma-rails', '~> 0.7.5'
 gem 'bulma-extensions-rails', '~> 1.0.30'
 gem 'devise'
-gem 'omniauth', '= 1.9.0'
+gem 'omniauth', '1.9.2'
 gem 'omniauth-facebook', '= 5.0.0'
 
 group :development, :test do
